@@ -1,5 +1,5 @@
 ---
-title: 11ty Boilerplate
+title: Prisma Starship C0.
 ---
 
 <!DOCTYPE html>
@@ -11,13 +11,60 @@ title: 11ty Boilerplate
   <link rel="stylesheet" href="/styles/screen.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
+<body class="bg-sky-800">
+  <img src="/images/Moon.png" alt="Moon Image" class="bg-image overflow-hidden">
+
+  <nav class="flex items-center space-x-20 pt-5 pb-5 bg-slate-300">
+    <h2 class="text-3xl ml-20 text-black font-bold">Prisma Starship Co.</h1>
+    <img src="/images/Strips.svg" alt="Strips Image" class="nav-strip">
   </nav>
-    {{ content }}
+
+  <h1 class="mt-20 text-6xl font-medium">Our Fleet in the Solar System</h1>
+
+  <div class="Cards flex text-black items-center justify-center gap-20 mt-10">
+
+    <div class="Card flex flex-col bg-slate-300 rounded-2xl mt-5">
+      <img src="/images/Ship.svg" alt="ship" class="h-60 mt-10 mb-10">
+      <button class="bg-red-500 text-white px-2 py-1 rounded-md text-sm w-20 self-end mr-10 mb-4">
+        Live
+      </button>
+      <h3 class="mb-2"><b>Name: Ivy-GP4</b></h3>
+      <p class="mb-2 w-80"><b>Location:</b> 2200 miles outside of Jupiter atmosphere</p>
+      <p class="mb-2"><b>Time Span:</b> 2 years in it's 5 year journey</p>
+      <button class="bg-black text-white text-wrap px-4 py-2 rounded-lg hover:bg-gray-900 mt-10 mb-5 w-60 self-center">
+        View Solar System Map
+      </button>
+    </div>
+
+    <div class="Card flex flex-col bg-slate-300 rounded-2xl mt-5">
+      <img src="/images/Ship.svg" alt="ship" class="h-60 mt-10 mb-10">
+      <button class="bg-red-500 text-white px-2 py-1 rounded-md text-sm w-20 self-end mr-10 mb-4">
+        Live
+      </button>
+      <h3 class="mb-2"><b>Name: Crimson-GP2</b></h3>
+      <p class="mb-2 w-80"><b>Location:</b> 7282 miles outside of Uranus atmosphere</p>
+      <p class="mb-2"><b>Time Span:</b> 1 years in it's 4 year journey</p>
+      <button class="bg-black text-white text-wrap px-4 py-2 rounded-lg hover:bg-gray-900 mt-10 mb-5 w-60 self-center">
+        View Solar System Map
+      </button>
+      
+    </div>
+
+    <div class="Card flex flex-col bg-slate-300 rounded-2xl mt-5">
+      <img src="/images/Ship.svg" alt="ship" class="h-60 mt-10 mb-10">
+      <button class="bg-red-500 text-white px-2 py-1 rounded-md text-sm w-20 self-end mr-10 mb-4">
+        Live
+      </button>
+      <h3 class="mb-2"><b>Name: Oliver-GP1</b></h3>
+      <p class="mb-2 w-80"><b>Location:</b> 789 miles outside of Mercury atmosphere</p>
+      <p class="mb-2"><b>Time Span:</b> 7 years in it’s 10 year journey</p>
+      <button class="bg-black text-white text-wrap px-4 py-2 rounded-lg hover:bg-gray-900 mt-10 mb-5 w-60 self-center">
+        View Solar System Map
+      </button>
+    </div>
+
+
+  </div>
+
 </body>
 </html>
